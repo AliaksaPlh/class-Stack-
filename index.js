@@ -10,7 +10,7 @@ class Stack {
   checkMaxNumEl() {
     if (
       typeof this.maxNumEl !== "number" ||
-      this.maxNumEl == NaN ||
+      isNaN(this.maxNumEl) ||
       this.maxNumEl == Infinity
     )
       throw new Error("Invalid maximum stack size ");
